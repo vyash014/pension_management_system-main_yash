@@ -1,0 +1,28 @@
+.outer-div {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.bgcolor{
+    background-color: turquoise;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+}
+.date-input{
+    margin-top: 0%;
+    width: 75%;
+}
+
+.break-div{
+    white-space: pre-line;
+}
+.bgstyle{
+    height: 35em;
+}
+

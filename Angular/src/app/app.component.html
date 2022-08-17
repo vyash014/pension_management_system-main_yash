@@ -1,0 +1,77 @@
+<div class="bgcolor">
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark topnav">
+  <div class="container-fluid">
+    <a class="navbar-brand header ">Pension Management System</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div *ngIf="isLoggedIn()">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="home" aria-current="page" href="#"><i
+                class="fas fa-home">&nbsp;</i>Home</a>
+          </li>
+        </div>
+        <div *ngIf="isLoggedIn()">
+          <li class="nav-item">
+            <a class="nav-link " routerLink="pensioner-details" href="#">Pensioner Details</a>
+          </li>
+        </div>
+        <div *ngIf="isLoggedIn()">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="pension-details" href="#">Pension Details</a>
+          </li>
+        </div>
+        <div *ngIf="isLoggedIn()">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="process-pension" href="#">Process Pension</a>
+          </li>
+        </div>
+      </ul>
+      <div *ngIf="isLoggedIn() " class="topnav-right ">
+        <li class="nav-item ">
+          <a class="nav-link" (click)="logout()" href="#"><i class="fas fa-sign-out-alt ">&nbsp;</i>Logout</a>
+        </li>
+      </div>
+    </div>
+  </div>
+</nav> <!-- End of header navbar  -->
+
+<div class="container mt-3">
+  <!-- All the component routed data goes here -->
+  <router-outlet></router-outlet>
+</div>
+<div class="mb-5"></div>
+
+<footer class="fixed-bottom bg-dark-blue bottomnav ">
+  <div class="icons text-center container"> 
+  <span><b>Web site for Pension Management by YASH </b></span>
+    <div class="tab">
+  <a style="color: #3b5998;" href="#!" role="button"
+  ><i class="fab fa-facebook-f fa-lg"></i
+></a>
+    </div>
+    <div class="tab">
+<!-- Twitter -->
+<a style="color: #55acee;" href="#!" role="button" 
+  ><i class="fab fa-twitter fa-lg"></i
+></a>
+</div>
+<div class="tab">
+
+<!-- Google -->
+<a style="color: #dd4b39;" href="#!" role="button"
+  ><i class="fab fa-google fa-lg"></i
+></a>
+</div>
+<div class="tab">
+<!-- Instagram -->
+<a style="color: #ac2bac;" href="#!" role="button"
+  ><i class="fab fa-instagram fa-lg"></i
+></a>
+</div>
+</div>
+</footer>
+</div>

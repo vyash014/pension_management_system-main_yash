@@ -1,0 +1,50 @@
+.bgcolor{
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+}
+.container-body{
+    height: 800px;
+    color: rgb(23, 255, 255);
+    background-image: url();  
+    background-size: 100%;  
+    background-size: cover;
+}
+  .bg-blue {background-color:rgb(2, 15, 27);padding:50px;}
+  .bg-moccasin {background: moccasin;}
+h1{
+  color: black;
+}  
+.tab {
+  display: inline-block;
+}
+.float-container {
+  padding: 20px;
+  padding-left: 20%;
+}
+
+.float-child {
+  height: 50%;
+  width: 45%;
+  float: left;
+  padding: 20px;
+}  
+.description{
+  font-style: italic;
+  font-size: 15;
+  color: black;
+
+}
+.rightdiv{
+  padding-left: 30%;
+  
+}
+.title{
+  font-size: 20px;
+}
+p{
+  background-color: coral;
+}
+ 

@@ -1,0 +1,67 @@
+.bg-dark-blue {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.bgstyle{
+    height: 30em;
+}
+
+.main-head{
+    color: black;
+}
+
+.card-title{
+    color: cyan;
+}
+.bg-dark-blue:hover {
+    background-color: blue;
+}
+
+.curved-div {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.outer-card-div {
+    background-color: rgb(0, 3, 3);
+    border-style: solid;
+    
+}
+
+.inner-card-div {
+    padding-top: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(53, 59, 59);
+    border-style: none;
+}
+
+#pension-amount {
+    height: 22em;
+    background-image: url("../../../assets/images/2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#process-pension {
+    height: 22em;
+    background-image: url("../../../assets/images/3.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#pensioner-details {
+    height: 22em;
+    background-image: url("../../../assets/images/4.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.card-deck{
+    display: inline-block}

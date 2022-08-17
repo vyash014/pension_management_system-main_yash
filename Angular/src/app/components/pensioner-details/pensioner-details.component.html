@@ -1,0 +1,57 @@
+<div class="container-body container-fluid">
+<h2 class="text-center main-head">Get details of pensioner</h2>
+<br><br>
+<div class="bgstyle">
+<div class="form-group mt-2 text-center main-head col-lg-6 offset-lg-3">
+    <label for="aadhaar-number"><h3>Aadhaar Number <span class="text-danger">*</span></h3></label>
+    <br><br>
+    <form> 
+    <input type="text" class="form-control mt-1  col-lg-10 offset-lg-3" id="aadhaar-number" name="aadhaar" #aadhaar=ngModel
+        [(ngModel)]='aadhaarNumber' pattern="^[0-9]{12}$"
+        placeholder="Enter the 12 digit Aadhaar number" required />
+     <br>  
+   <!--  <a href="#" routerLink="localhost:8083/pensionerDetailByAadhaar/123456789011">-->
+
+    <input class="btn btn-primary" type="submit" (click)="getUserDetail()">
+    </form>
+    <!-- Validations -->
+    <div *ngIf="aadhaar.invalid && (aadhaar.dirty || aadhaar.touched)" class="form-control is-invalid col-lg-10 offset-lg-3" style="width: 50%;">
+        <div *ngIf="aadhaar.errors?.required">
+            * Aadhaar Number is required
+        </div>
+        <div *ngIf="aadhaar.errors?.pattern">
+            * Aadhaar Number format is incorrect
+        </div>
+    </div>
+
+</div>
+<br><br>
+<div *ngIf="aadharFlag" >
+    <table class="border border-primary" class="text-center text-white">
+        <tr class="p-3 mb-2 bg-primary text-white">      
+        <th>Name</th>
+        <th>Date Of Birth</th>
+        <th>PAN</th>
+        <th>Salary</th>
+        <th>Allowance</th>
+        <th>PensionType</th>
+        <th>Bank_Name</th>
+        <th>Account_Number</th>
+        <th>Bank_Type</th>
+        
+        </tr>
+        <tr>
+          <td>{{this.pensioner.name | uppercase}}</td>
+          <td>{{this.pensioner.dateOfBirth}}</td>
+          <td>{{this.pensioner.pan}}</td>
+          <td>{{this.pensioner.salary}}</td>
+          <td>{{this.pensioner.allowance}}</td>
+          <td>{{this.pensioner.pensionType}}</td>
+          <td>{{this.pensioner.bank.bankName}}</td> 
+          <td>{{this.pensioner.bank.accountNumber}}</td>
+          <td>{{this.pensioner.bank.bankType}}</td>
+        </tr>
+      </table>
+</div>
+</div>
+</div>
